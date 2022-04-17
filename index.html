@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Film Seçme Alanı -->
+    <div class="film-container">
+        <label>Film Seçiniz : </label>
+        <select id="film">
+            <option value="40">Don't Look Up (40₺)</option>
+            <option value="38">Aşk Taktikleri (38₺)</option>
+            <option value="42">Bergen (42₺)</option>
+            <option value="35">Sen Yaşamaya Bak (35₺)</option>
+        </select>
+    </div>
+
+    <!-- Koltukların Durum Seçenekleri Alanı -->
+    <ul class="durum">
+        <li>
+            <div class="koltuk"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="koltuk secili"></div>
+            <small>Seçili</small>
+        </li>
+        <li>
+            <div class="koltuk dolu"></div>
+            <small>Dolu</small>
+        </li>
+    </ul>
+
+
+    <!-- Koltukların oluşturulduğu alan -->
+    <div class="container">
+        <div class="ekran"></div>
+
+        <div class="row">
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+        </div>
+        <div class="row">
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+        </div>
+        <div class="row">
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+        </div>
+        <div class="row">
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+        </div>
+        <div class="row">
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+        </div>
+        <div class="row">
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk dolu"></div>
+            <div class="koltuk"></div>
+            <div class="koltuk"></div>
+        </div>
+    </div>
+
+
+    <!-- Fiyat bildiriminin yapıldığı alan -->
+    <p class="text"><span id="count">0</span> adet koltuk seçimi yaptınız.  Toplam tutar : <span id="total">0</span> ₺</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
